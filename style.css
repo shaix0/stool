@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#left-panel {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#edit-toggle {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+#edit-toggle:hover {
+    background-color: #f4f4f4;
+}
+
+#course-container {
+    width: 200px;
+    padding: 0;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+#course-container h3 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+#course-container div {
+    padding: 10px; /* 增加內部邊距 */
+}
+
+#course-container.collapsed {
+    height: 40px;
+    opacity: 1;
+}
+
+#course-container.collapsed > div {
+    display: none;
+}
+
+.draggable {
+    cursor: default;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    opacity: 0.6;
+}
+
+.draggable.enabled {
+    cursor: grab;
+    opacity: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    min-width: 100px;
+    height: 50px;
+    vertical-align: top;
+    position: relative;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+td {
+    padding: 15px;
+}
+
+.light-blue {
+    background-color: #d9f1ff;
+}
+
+.light-green {
+    background-color: #d5f7e5;
+}
+
+.light-red {
+    background-color: #f9dada;
+}
